@@ -11,7 +11,7 @@
 		<section id="todoapp">
 			<header id="header">
 				<h1>todos</h1>
-				<input id="new-todo" placeholder="What needs to be done?" autofocus>
+				<input id="new-todo" placeholder="可在此输入任何列表" autofocus>
 			</header>
 			<section id="main">
 				<input id="toggle-all" type="checkbox">
@@ -41,16 +41,16 @@
 			<span id="todo-count"><strong>{{activeTodoCount}}</strong> {{activeTodoWord}} left</span>
 			<ul id="filters">
 				<li>
-					<a {{#eq filter 'all'}}class="selected"{{/eq}} href="#/all">All</a>
+					<a {{#eq filter 'all'}}class="selected"{{/eq}} href="#/所有任务">All</a>
 				</li>
 				<li>
-					<a {{#eq filter 'active'}}class="selected"{{/eq}}href="#/active">Active</a>
+					<a {{#eq filter 'active'}}class="selected"{{/eq}}href="#/待完成任务">Active</a>
 				</li>
 				<li>
-					<a {{#eq filter 'completed'}}class="selected"{{/eq}}href="#/completed">Completed</a>
+					<a {{#eq filter 'completed'}}class="selected"{{/eq}}href="#/已完成任务">Completed</a>
 				</li>
 			</ul>
-			{{#if completedTodos}}<button id="clear-completed">Clear completed</button>{{/if}}
+			{{#if completedTodos}}<button id="clear-completed">清除全部</button>{{/if}}
 		</script>
 		<script src="node_modules/todomvc-common/base.js"></script>
 		<script src="node_modules/jquery/dist/jquery.js"></script>
